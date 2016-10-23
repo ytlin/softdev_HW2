@@ -12,14 +12,37 @@
 				 border-radius: 10px;	
 				}
 			header {text-align: center;}
-
+			.right	{text-align: right;
+				 margin-right: 5%;	
+				 font-size: 1.5em;
+				}
+			.left	{text-align: left;
+				 margin-left: 2.5%;
+				 font-weight: bold;
+				}
+			.align	{position: absolute;
+					 left: 80px;
+					}
 		</style>
+		<!-- end of CSS style-->
 	</head>
 
 	<body>
 		<header>
 			<h1>caculator</h1>
 		</header>
+		<!-- answer section-->
+		<section id="1">
+			<p class="right"><strong>0</strong></p>	
+		</section>
+
+		<!-- various base section-->
+		<section class="left" id="2">
+			<p>HEX<span class="align">0</span></p>	
+			<p>DEC<span class="align">0</span></p>	
+			<p>OCT<span class="align">0</span></p>	
+			<p>BIN<span class="align">0</span></p>	
+		</section>
 	</body>	
 
 </html>
