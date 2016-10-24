@@ -12,6 +12,9 @@
 				 border-radius: 10px;
 				 width:	30em;
 				 height: 51em;
+				 border-color: white;
+				 margin-color: white;
+				 overflow: scroll;
 				}
 			header {text-align: center;}
 			.right	{text-align: right;
@@ -19,7 +22,10 @@
 				 margin-top: 2em;	
 				 margin-bottom: 2em;	
 				 font-size: 1.7em;
+   				 color: white;
 				}
+			.white	{color: white}
+			.backgroundblack	{background-color: black;}
 			.left	{text-align: left;
 				 margin-left: 2.5%;
 				 font-weight: bold;
@@ -28,7 +34,9 @@
 			.align	{position: absolute;
 				 left: 90px;
 			    	}
-			button	{background-color: aliceblue;
+			button	{background-color: #131313;
+				 border-color: white;
+				 border: large;
 				 border-radius: 10px;
 				 width:	4em;
 				 height: 4em;
@@ -36,22 +44,32 @@
 				 padding: 1.4em 1em;
 				 text-align: center;
 			    	 font-size: 1em;
+				 color: white;
 				}
+			.outsideCont {position:absolute;
+				      z-index: -1;
+				      top:0px;left:0px;
+                                      height:53em;width:32em;
+				      background-color:black; 
+				     }
 		</style>
 		<!-- end of CSS style-->
 	</head>
 
 	<body>
-		<header>
+		<!-- just for fixed size black background-->	
+		<div class="outsideCont"></div>
+
+		<header class="white">
 			<h1>caculator</h1>
 		</header>
 		<!-- answer section-->
 		<section id="1">
-			<p class="right"><strong>0</strong></p>	
+			<p class="right white"><strong>0</strong></p>	
 		</section>
 
 		<!-- various base section-->
-		<section class="left" id="2">
+		<section class="left white" id="2">
 			<p>HEX<span class="align">0</span></p>	
 			<p>DEC<span class="align">0</span></p>	
 			<p>OCT<span class="align">0</span></p>	
@@ -65,7 +83,7 @@
 				<button>Mod</button>
 				<button>CE</button>
 				<button>C</button>
-				<button>-</button>
+				<button>&larr;</button>
 				<button>%</button>
 			</div>
 			<div>
@@ -74,7 +92,7 @@
 				<button>7</button>
 				<button>8</button>
 				<button>9</button>
-				<button>x</button>
+				<button>X</button>
 			</div>
 			<div>
 				<button style="margin-right: 0.6em;margin-left: 0.9em;">C</button>
@@ -95,13 +113,12 @@
 			<div>
 				<button style="margin-right: 0.6em;margin-left: 0.9em;"></button>
 				<button></button>
-				<button>+-</button>
+				<button>&plusmn</button>
 				<button>0</button>
 				<button></button>
 				<button>=</button>
 			</div>
 		</section>
-		
 	</body>	
 
 </html>
